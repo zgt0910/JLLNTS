@@ -7,20 +7,9 @@ addpath  D:\PHDCODE\研究生的代码和数据\4.MVC\all\alldata;
 addpath  D:\PHDCODE\研究生的代码和数据\4.MVC\all\Ncut_9;
 datasetname = { ...
     'AR', ... 1
-    'CMU_PIE', ...2
     'COIL20', ...3
-    'ExtendedYaleB' ...4
-    'FERET', ... 5
-    'GT', ...6
-    'jaffe_676' ...7
-    'jaffe_1024', ...8 
     'ORL', ...9
-    'Umist', ...10
-    'Yale_1024', ...11
-    'YaleB_32x32' ...12  
-    'COIL100', ...13
-    'XM2VTS', ...14
-    'usps', ...15
+    'COIL100', ...13 
 }; 
 for i =[13]%length(datasetname)
 name = datasetname{i};
@@ -65,3 +54,4 @@ for parm=parm_all
 end
   save(char([methodname,'_',name,'60class_all']), 'result_all','A','Z');
 end
+
