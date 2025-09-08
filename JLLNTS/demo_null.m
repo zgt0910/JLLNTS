@@ -50,8 +50,8 @@ for parm=parm_all
    results = getFourMetrics(result_label,gnd);
    elapsed_time = toc; 
    result_all=[result_all;results elapsed_time]
-   % save(char([methodname,'_',name,'_',num2str(parm),'_all']), 'results','A','Z');
+   save(char([methodname,'_',name,'_',num2str(parm),'_all']), 'results','A','Z');
 end
-  save(char([methodname,'_',name,'60class_all']), 'result_all','A','Z');
 end
+
 
